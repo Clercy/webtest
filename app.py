@@ -4,7 +4,7 @@ from sklearn.externals import joblib
 
 import os
 
-    
+
 
 app = Flask(__name__, static_url_path='/static/')
 
@@ -14,25 +14,28 @@ def form():
     return render_template('index.html')
 
 
-@app.route('/predict_price', methods=['POST', 'GET'])
-def predict_price():
+#@app.route('/predict_price', methods=['POST', 'GET'])
+@app.route('/D_DIFF_B', methods=['POST', 'GET'])
+
+#def predict_price():
+def D_DIFF_B():    
     # get the parameters
     LAST_DM = float(request.form['LAST_DM'])
         # 'LAST_DM',
-                 # Web app text: Month of the last extermination 
+                 # Web app text: Month of the last extermination
                      # (options: 1 thru 12)
 
         # Previous:: bedrooms = float(request.form['bedrooms'])
 
     LAST_DY = float(request.form['LAST_DY'])
         # 'LAST_DY',
-                 # Web app text: Year of the last extermination 
+                 # Web app text: Year of the last extermination
                      # (options: 2018 thru 2019)
 
         # Previous:: bathrooms = float(request.form['bathrooms'])
 
     EPI_DIST_1 = float(request.form['EPI_DIST_1'])
-        # 'EPI_DIST_1', 
+        # 'EPI_DIST_1',
                  # Web app text: Distance from interesection (-73.585636, 45.527404) in Parc-Laurier, Le Plateau-Mont-Royal
                      # (options in km: 2, 4, 8, 10, 12, 14)
 
@@ -47,7 +50,7 @@ def predict_price():
 
     EPI_DIST_5 = float(request.form['EPI_DIST_5'])
         # 'EPI_DIST_5'
-                 # Web app text: Distance from interesection (-73.68714399999999, 45.518173) in Grenet, Saint-Laurent 
+                 # Web app text: Distance from interesection (-73.68714399999999, 45.518173) in Grenet, Saint-Laurent
                      # (options in km: 2, 4, 8, 10, 12, 14)
 
         # Previous::  condition = float(request.form['condition'])
@@ -58,7 +61,7 @@ def predict_price():
         # use \model\Random_Forest_10.pkl rather than \model\linear_regression.pkl
 
     prediction = model.predict([[LAST_DM, LAST_DY, EPI_DIST_1, EPI_DIST_4, EPI_DIST_5]])
-    
+
     D_DIFF_B = prediction.round(1)[0]
 
     return render_template('results.html',
