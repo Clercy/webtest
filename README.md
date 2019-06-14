@@ -15,9 +15,11 @@ Github Directory : https://github.com/Clercy/webtest
 Website Access : https://houseproj.herokuapp.com/
 
 
-Files required to run website: app.py, index.html, results.html, Random_Forest_10.pkl
+
 ---------------
 
+
+Files required to run website: app.py, index.html, results.html, Random_Forest_10.pkl
 
 The data app consists of the Regression model.ipynb notebook
 which generates the model Random_Forest_10.pkl used in our application
