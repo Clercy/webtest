@@ -37,13 +37,6 @@
         }
 
 
-
-
-
-
-
-
-
         .ui.menu .item img.logo {
         margin-right: 1.5em;
         }
@@ -68,7 +61,7 @@
 <div class="ui fixed inverted menu">
     <div class="ui container">
         <a href="/" class="header item">
-            <!--<img class="logo" src="assets/images/logo.png">-->
+
             Bed Bug Prediction
         </a>
         <a href="/" class="item">Home</a>
@@ -77,18 +70,10 @@
 
 <div class="ui main text container">
 
-    <!--
-    <h1 class="ui header">Predicted Price</h1>
-    -->
     <h1 class="ui header">Number of Days Infestation Free</h1>
 
     <div class="ui statistics">
         <div class="statistic">
-
-            <!--
-            <div class="value">{{ bedrooms }}</div>
-            <div class="label">Bedrooms</div>
-            -->
 
             <div class="value">{{ LAST_DM }}</div>
             <div class="label">Month</div>
@@ -96,21 +81,11 @@
         </div>
         <div class="statistic">
 
-            <!--
-            <div class="value">{{ bathrooms }}</div>
-            <div class="label">Bathrooms</div>
-            -->
-
             <div class="value">{{ LAST_DY }}</div>
             <div class="label">Year</div>
 
         </div>
         <div class="statistic">
-
-            <!--
-            <div class="value">{{ sqft_living15 }}</div>
-            <div class="label">Square foot</div>
-            -->
 
             <div class="value">{{ EPI_DIST_1 }}</div>
             <div class="label">Epicenter 1</div>
@@ -118,21 +93,12 @@
         </div>
         <div class="statistic">
 
-            <!--
-            <div class="value">{{ grade }}</div>
-            <div class="label">Grade</div>
-            -->
-
             <div class="value">{{ EPI_DIST_4 }}</div>
             <div class="label">Epicenter 2</div>
 
         </div>
         <div class="statistic">
 
-            <!--
-            <div class="value">{{ condition }}</div>
-            <div class="label">Conditions</div>
-            -->
 
             <div class="value">{{ EPI_DIST_5 }}</div>
             <div class="label">Epicenter 3</div>
@@ -142,14 +108,9 @@
     </div>
     <p></p>
     <div class="ui center aligned container large statistic">
-        <!--
-        <div class="value">{{ predicted_price }}</div>
-        -->
+
         <div class="value">{{ D_DIFF_B }}</div>
 
-        <!--
-        <div class="label">Predicted Price</div>
-        -->
         <div class="label">Number of Days</div>
 
     </div>
