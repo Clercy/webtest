@@ -15,6 +15,7 @@ Github Directory : https://github.com/Clercy/webtest
 Website Access : https://houseproj.herokuapp.com/
 
 
+Files required to run website: app.py, index.html, results.html, Random_Forest_10.pkl
 ---------------
 
 
