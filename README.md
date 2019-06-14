@@ -3,29 +3,19 @@
 Team: Ilia Kassianenko, Luigi Clerici
 
 
-Model Source
+Model Source : Regression model.ipynb
 
--------------
 
-Regression model.ipynb
+Model Output : Random_Forest_10.pkl
 
-Model Output
 
--------------
+Github Directory : https://github.com/Clercy/webtest
 
-Random_Forest_10.pkl
 
-Github Directory
+Website Access : https://houseproj.herokuapp.com/
 
------------------
-
-https://github.com/Clercy/webtest
-
-Website Access
 
 ---------------
-
-https://houseproj.herokuapp.com/
 
 
 The data app consists of the Regression model.ipynb notebook
